@@ -3,32 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WeatherTravel - Pronóstico Europeo de 7 Días</title>
+    <title>Agencia de Viajes - Clima Europeo</title>
     <link rel="stylesheet" href="css/master.css">
 </head>
 <body>
+    <div id="particles-js"></div>
+
     <header>
-        <h1>API Project: Clima en Europa</h1>
-        <p>Planifica tu viaje con precisión meteorológica.</p>
+        <h1 class="titulo-principal">EUROPEAN TRAVEL AGENCY</h1>
+        <p class="subtitulo">PRONÓSTICO METEOROLÓGICO DE 7 DÍAS</p>
     </header>
 
-    <main class="container">
-        <section class="selection-area">
-            <label for="city-selector">Selecciona tu próximo destino:</label>
-            <select id="city-selector">
-                <option value="">Cargando destinos...</option>
-            </select>
+    <main class="panel-cristal">
+        <section class="control-usuario">
+            <h2>CONSULTA PARA: <span id="nombre-ciudad-actual">[DESTINO]</span></h2>
+            <div class="selector-wrapper">
+                <select id="selector-ciudades" aria-label="Seleccionar ciudad europea">
+                    <option value="">Cargando destinos...</option>
+                </select>
+            </div>
         </section>
 
-        <section id="weather-display" class="weather-grid" aria-live="polite">
-            <p>Elige una ciudad para ver el pronóstico de los próximos 7 días.</p>
+        <section id="contenedor-clima" class="fila-pronostico" aria-live="polite">
+            <p class="mensaje-estado">Por favor, seleccione una ciudad para comenzar.</p>
         </section>
+        
+        <footer>
+            <p class="creditos">Datos meteorológicos obtenidos vía 7Timer! API</p>
+        </footer>
     </main>
 
-    <footer>
-        <p class="copyright-text">© Copyright 2026 Agencia de Viajes Europea</p>
-    </footer>
-
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
