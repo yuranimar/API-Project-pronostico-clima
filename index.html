@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WeatherTravel - Pronóstico Europeo de 7 Días</title>
+    <link rel="stylesheet" href="css/master.css">
+</head>
+<body>
+    <header>
+        <h1>API Project: Clima en Europa</h1>
+        <p>Planifica tu viaje con precisión meteorológica.</p>
+    </header>
+
+    <main class="container">
+        <section class="selection-area">
+            <label for="city-selector">Selecciona tu próximo destino:</label>
+            <select id="city-selector">
+                <option value="">Cargando destinos...</option>
+            </select>
+        </section>
+
+        <section id="weather-display" class="weather-grid" aria-live="polite">
+            <p>Elige una ciudad para ver el pronóstico de los próximos 7 días.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright-text">© Copyright 2026 Agencia de Viajes Europea</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
